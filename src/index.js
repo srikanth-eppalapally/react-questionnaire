@@ -1,0 +1,3 @@
+export const CONFIRM_ANSWER = 'CONFIRM_ANSWER'
+export const CHANGE_QUESTION = 'CHANGE_QUESTION'
+export const FIND_SUM = 'FIND_SUM'

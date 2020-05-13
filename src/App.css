@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+#root, .App, .Survey, .questions-section, .survey{
+  width:100%;
+  float: left;
+}
+
+.arrow{
+  float: left;
+  cursor: pointer;
+  padding:0 10px;
+  font-size: 22px;
+  margin: 0;
+  color: #111111;
+
+}
+p{
+  padding:10px; 
+}
+.arrow.disable{
+  opacity: 0.5;
+  pointer-events: none;
+}
+.arrow-left{
+  float: left;
+}
+.arrow-right{
+  float: right;
+}
+
+
+.survey-container{
+  width:600px;
+  margin: 0 auto;
+}
+
+.survey-content {
+  width: 100%;
+  float: left;
+  background: #dedede;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.survey-carousel-container, .survey-carousel-controls{
+  width:100%;
+  float: left;
+  overflow: hidden;
+}
+.survey-carousel{
+  width:2400px;
+  float: left;
+}
+.survey-carousel .slide{
+  width: 600px;
+  float: left;
+  transition: 0.5s all;
+}
+.survey-carousel.first{
+  margin-left: 0;
+}
+.survey-carousel.second{
+  margin-left: -600px;
+}
+.survey-carousel.third{
+  margin-left: -1200px;
+}
+.survey-carousel.fourth{
+  margin-left: -1800px;
+}
+.survey-result{
+  margin: 10px;
+  float: left;
+  width: 100%;
+}
+.btn-choice{
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;    
+    text-align: center;
+    white-space: nowrap;   
+    cursor: pointer;   
+    background: #fff; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin:5px 15px;
+
+}
+
+@media screen and (min-width:400px) and (max-width:600px) {
+
+  .survey-container{
+      width:360px;
+      padding:5px;
+  }
+  .survey-carousel .slide{
+    width: 360px;
+  }
+  .survey-carousel.first{
+      margin-left: 0px;
+  }
+  .survey-carousel.second{
+    margin-left: -360px;
+     
+  }
+  .survey-carousel.third{
+    margin-left: -720px;
+     
+  }
+  .survey-carousel.fourth{
+    margin-left: -1080px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  h2{
+      font-size: 1.2em;
+  }
+  .survey-carousel .slide{
+    width: 270px;
+  }
+  .survey-container{
+      width:270px;
+      padding: 5px;
+  }
+  .survey-carousel.first{
+      margin-left: 0;
+  }
+  .survey-carousel.second{
+    margin-left: -270px;
+      
+  }
+  .survey-carousel.third{
+    margin-left: -540px;
+     
+  }
+  .survey-carousel.fourth{
+    margin-left: -810px;
+  }
+}
+
